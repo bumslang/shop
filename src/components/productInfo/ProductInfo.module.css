@@ -1,0 +1,139 @@
+.productInfo {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    'nav nav'
+    'productInfoTitle productInfoTitle'
+    'swiper info'
+
+    ;
+    padding: 0 116px 80px 116px;
+    background: #FBF8EC;
+}
+
+.nav {
+    box-sizing: border-box;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #414141;
+    text-decoration: none;
+}
+
+.linkMain {
+    box-sizing: border-box;
+}
+
+.arrowIcon {
+    box-sizing: border-box;
+}
+
+.linkCatalog {
+    box-sizing: border-box;
+}
+
+.linkOil{
+    color: #8F8F8F;
+}
+
+.ProductInfoTitle{
+    box-sizing: border-box;
+    box-sizing: border-box;
+    grid-area: productInfoTitle;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 24px 0 60px 0;
+}
+
+.swiper {
+    box-sizing: border-box;
+    grid-area: swiper;
+}
+
+.info{
+    box-sizing: border-box;
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+}
+
+.priceContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+.priceDiscount,
+.priceRegular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.priceDiscountValue,
+.priceRegularValue{
+    font-size: 24px;
+    color: #606060;
+    padding: 0;
+    margin: 0;
+}
+
+.priceDiscountLabel,
+.priceRegularLabel{
+    color: #BFBFBF;
+    font-size: 12px;
+    margin: 6px 0 0 0;
+    padding: 0px;
+}
+
+.priceDiscountValue{
+    font-size: 36px;
+    font-weight: 700;
+    color: #414141;
+}
+
+.buttonInBasket{
+    box-sizing: border-box;
+    border: 1px solid #70C05B;
+    color: #70C05B;
+    background: white;
+    border-radius: 4px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 24px 0;
+    padding: 16px 0;
+}
+
+.buttonInBasket:hover{
+    background: #FF6633;
+    color: white;
+    border-color: #FF6633;
+    transition: 0.3s ease;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.productCountry,
+.productWeight,
+.productBrand{
+    display: flex;
+    background: #F3F2F1;
+    padding: 4px 8px;
+    margin: 0;
+}
+
+.productCountry{
+background: inherit;
+}

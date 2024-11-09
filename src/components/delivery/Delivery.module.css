@@ -1,0 +1,24 @@
+.delivery{
+    display: flex;
+    position: relative;
+}
+
+.delivery__background{
+    box-shadow: 0px -4px 0px #FBF8EC
+}
+
+.delivery__image{
+    position: absolute;
+    width: 303px;
+    top: 0px;
+    left: 170px;
+}
+
+.delivery__text{
+    position: absolute;
+    right: 170px;
+    top: 27px;
+    font-size: 48px;
+    font-weight: 700;
+}
+

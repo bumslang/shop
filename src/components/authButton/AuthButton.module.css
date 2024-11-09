@@ -1,0 +1,19 @@
+.auth{
+    display: flex;
+    background: #49a6f5;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.auth:hover{
+    background: #FF6633;
+    color: white;
+    border-color: #FF6633;
+    transition: 0.3s ease;
+}

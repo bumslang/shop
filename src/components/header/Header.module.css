@@ -1,0 +1,147 @@
+.header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    margin: 0;
+    padding: 0 116px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #414141;
+}
+
+.logo{
+    display: flex;
+    margin: 0 10px 0 0;
+}
+
+.catalogBtn {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 140px;
+    height: 40px;
+    background: #70C05B;
+    justify-content: space-around;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.catalog__text {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.search {
+    display: flex;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.search__input {
+    box-sizing: border-box;
+    padding: 8px;
+    height: 40px;
+    width: 375px;
+    border: 1px solid #70C05B;
+    border-radius: 4px;
+}
+
+.search__icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.favorite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #414141;
+}
+
+.favorite__text {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #414141;
+}
+
+.order__text {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #414141;
+}
+
+.basket__text {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 217px;
+    padding: 8px;
+}
+
+.user__photo {
+    margin: 8px;
+}
+
+.user__data {
+    display: flex;
+    align-items: center;
+}
+
+
+.user__photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.active{
+    color: #70C05B;
+}

@@ -1,0 +1,149 @@
+.section {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "nav nav nav nav"
+        "categoryTitle categoryTitle categoryTitle categoryTitle"
+        "filterSection productList productList productList"
+        ". pagination pagination pagination ";
+    gap: 40px;
+    padding: 0 116px 80px 116px;
+    background: #FBF8EC;
+}
+
+.nav {
+    box-sizing: border-box;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #414141;
+    text-decoration: none;
+}
+
+.linkMain {
+    box-sizing: border-box;
+}
+
+.arrowIcon {
+    box-sizing: border-box;
+}
+
+.linkCatalog {
+    box-sizing: border-box;
+
+}
+
+.linkMilk {
+    box-sizing: border-box;
+    color: #8F8F8F;
+}
+
+.categoryTitle {
+    box-sizing: border-box;
+    grid-area: categoryTitle;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 24px 0 60px 0;
+}
+
+/* .filterSection {
+    box-sizing: border-box;
+    grid-area: filterSection;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .filterTitle {
+    box-sizing: border-box;
+    padding: 10px;
+    background: #F3F2F1;
+    border-radius: 4px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+
+} */
+
+/* .priceFilter {
+    box-sizing: border-box;
+    margin: 0 0 40px 0;
+}
+
+.filterLabel {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+
+.priceInput {
+    box-sizing: border-box;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #BFBFBF;
+} */
+
+/* .priceFilter span {
+    padding: 0 5px;
+}
+
+.checkboxes {
+    box-sizing: border-box;
+    padding: 0;
+   display: flex;
+   flex-direction: column;
+   margin: 0 0 40px 0;
+}
+
+.checkboxLabel {
+    box-sizing: border-box;
+}
+
+.checkbox {
+    box-sizing: border-box;
+}
+
+.applyButton {
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    background: #FF6633;
+    border: none;
+    padding: 8px 0;
+    font-size: 16px;
+} */
+
+.productList {
+    box-sizing: border-box;
+    grid-area: productList;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+
+.pagination {
+    box-sizing: border-box;
+    grid-area: pagination;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.paginationItem {
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 16px;
+}
+
+.paginationLink{
+    text-decoration: none;
+    color: inherit;
+}

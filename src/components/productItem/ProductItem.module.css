@@ -1,0 +1,86 @@
+.productCard{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 272px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 5px grey;
+    color: #414141;
+    text-decoration: none;
+}
+
+.imageBlock{
+    display: flex;
+    position: relative;
+}
+
+.discount{
+    position: absolute;
+    top: 118px;
+    left: 10px;
+    border-radius: 4px;
+    background: #FF6633;
+    padding: 4px 8px;
+    color: white;
+}
+
+.favorite{
+    position: absolute;
+    top: 8px;
+    left: 232px;
+    border-radius: 4px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+
+.priceWidthCard,
+.regularPrice{
+    display: flex;
+    flex-direction: column;
+}
+
+.priceWidthCard__number,
+.regularPrice__number{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 27px;
+    margin: 0;
+    padding: 0;
+}
+
+.priceWidthCard__text,
+.regularPrice__text{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #BFBFBF;
+}
+
+.description{
+    display: flex;
+    margin: 8px;
+}
+
+.btnBasket{
+    display: flex;
+    background: white;
+    margin: 8px;
+    padding: 8px 0;
+    color: #70C05B;
+    border: 1px solid #70C05B;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.btnBasket:hover{
+    background: #FF6633;
+    color: white;
+    border-color: #FF6633;
+    transition: 0.3s ease;
+
+}

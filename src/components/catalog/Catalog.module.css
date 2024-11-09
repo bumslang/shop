@@ -1,0 +1,278 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  background: #FBF8EC;
+  /* padding: 0 116px 80px 116px; */
+  margin: 0;
+}
+
+.links{
+  display: flex;
+  padding: 24px 0;
+}
+
+.linkMain{
+  color: #414141;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 0 16px 0 0;
+}
+
+.linkCatalog{
+  color: #8F8F8F;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 0 0 0 16px;
+}
+
+.catalogName{
+  padding: 24px 0 60px 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.categories {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 272px);
+  grid-template-rows: repeat(4, 200px);
+  grid-template-areas:
+    "milk milk bread fruits"
+    "iceProducts drinks confectionery tea"
+    "grocery healthyFoods zoo zoo"
+    "kidsFoods meat meat nonFoodProducts";
+  gap: 40px;
+}
+
+.item {
+  display: flex;
+  align-items: end;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 0 10px 10px;
+  text-decoration: none;
+}
+
+.milk {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, /* Зеленый цвет внизу */
+    rgba(0, 255, 0, 0) 50% /* Прозрачный вверху */
+  ), url('../../images/products/milk.png');
+  grid-area: milk;
+}
+
+.milk:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, /* Оранжевый цвет при наведении */
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/milk.png');
+}
+
+.bread {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/bread.png');
+  grid-area: bread;
+}
+
+.bread:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/bread.png');
+}
+
+.fruits {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/fruits.png');
+  grid-area: fruits;
+}
+
+.fruits:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/fruits.png');
+}
+
+.iceProducts {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/iceProducts.png');
+  grid-area: iceProducts;
+}
+
+.iceProducts:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/iceProducts.png');
+}
+
+.drinks {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/drinks.png');
+  grid-area: drinks;
+}
+
+.drinks:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/drinks.png');
+}
+
+.confectionery {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/confectionery.png');
+  grid-area: confectionery;
+}
+
+.confectionery:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/confectionery.png');
+}
+
+.tea {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/tea.png');
+  grid-area: tea;
+}
+
+.tea:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/tea.png');
+}
+
+.grocery {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/grocery.png');
+  grid-area: grocery;
+}
+
+.grocery:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/grocery.png');
+}
+
+.healthyFoods {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/healthyFoods.png');
+  grid-area: healthyFoods;
+}
+
+.healthyFoods:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/healthyFoods.png');
+}
+
+.zoo {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/zoo.png');
+  grid-area: zoo;
+}
+
+.zoo:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/zoo.png');
+}
+
+.kidsFoods {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/kidsFoods.png');
+  grid-area: kidsFoods;
+}
+
+.kidsFoods:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/kidsFoods.png');
+}
+
+.meat {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/meat.png');
+  grid-area: meat;
+}
+
+.meat:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/meat.png');
+}
+
+.nonFoodProducts {
+  background: linear-gradient(
+    to top,
+    #70C05B 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/nonFoodProducts.png');
+  grid-area: nonFoodProducts;
+}
+
+.nonFoodProducts:hover {
+  background: linear-gradient(
+    to top,
+    #FF6633 0%, 
+    rgba(0, 255, 0, 0) 50%
+  ), url('../../images/products/nonFoodProducts.png');
+}

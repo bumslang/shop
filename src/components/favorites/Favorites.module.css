@@ -1,0 +1,7 @@
+.favorite{
+    width: 75%;
+    background: #FBF8EC;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

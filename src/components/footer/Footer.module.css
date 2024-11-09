@@ -1,0 +1,75 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 126px;
+    margin: 0;
+    padding: 0 116px;
+    background: #F9F4E2;
+    
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    list-style-type:none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.company,
+.contacts,
+.vacancies,
+.security{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0 40px 0 0;
+}
+
+.company__link,
+.contacts__link,
+.vacancies__link,
+.security__link{
+    display: flex;
+    text-decoration: none;
+    color:#414141;
+    font-size: 12px;
+}
+
+.socials{
+    display: flex;
+    list-style-type:none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.inst,
+.fb,
+.vk,
+.ok{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0 16px 0 0;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone__number{
+    padding: 0 0 0 8px;
+    
+}
