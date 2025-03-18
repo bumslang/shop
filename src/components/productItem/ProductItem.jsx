@@ -56,7 +56,7 @@ function ProductItem({
             <p className={cl.description}>
                 {title}
             </p>
-            <Stars starsRating={starsRating} />
+            <Stars starsRating={starsRating} id={id} />
             {/* <button className={cl.btnBasket}>
                 В корзину
             </button> */}

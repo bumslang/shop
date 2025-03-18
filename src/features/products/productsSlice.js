@@ -14,7 +14,13 @@ let initialState = [
         priceWidthCard: '45 P',
         priceWidthCardDescrip: 'C картой',
         title: 'Яйца',
-        starsRating: 50,
+        starsRating: {
+            admin: 5,
+            ura: 3,
+            tre: 4,
+            fdg: 3,
+            k: 4
+        },
 
     },
     {
@@ -28,7 +34,12 @@ let initialState = [
         priceWidthCard: '55 P',
         priceWidthCardDescrip: 'C картой',
         title: 'Молоко',
-        starsRating: 50,
+        starsRating: {
+            ura: 3,
+            tre: 4,
+            fdg: 3,
+            k: 4
+        },
     },
     {
         category: 'Молоко, сыр, яйцо',
@@ -41,7 +52,11 @@ let initialState = [
         priceWidthCard: '65 P',
         priceWidthCardDescrip: 'C картой',
         title: 'Сыр',
-        starsRating: 50,
+        starsRating: {
+            admin: 5,
+            fdg: 3,
+            k: 4
+        },
     },
     {
         category: 'Хлеб',
@@ -54,7 +69,10 @@ let initialState = [
         priceWidthCard: '25 P',
         priceWidthCardDescrip: 'C картой',
         title: 'Хлеб',
-        starsRating: 50,
+        starsRating: {
+            admin: 5,
+            k: 4
+        },
     },
     {
         category: 'Молоко, сыр, яйцо',
@@ -67,7 +85,11 @@ let initialState = [
         priceWidthCard: '75 P',
         priceWidthCardDescrip: 'C картой',
         title: 'Сыр',
-        starsRating: 50,
+        starsRating: {
+            tre: 4,
+            fdg: 3,
+            k: 4
+        },
     },
     {
         category: 'Хлеб',
@@ -80,7 +102,10 @@ let initialState = [
         priceWidthCard: '5 P',
         priceWidthCardDescrip: 'C картой',
         title: 'Батон',
-        starsRating: 50,
+        starsRating: {
+            fdg: 3,
+            k: 4
+        },
     },
 ]
 
@@ -96,11 +121,19 @@ export const productsSlice = createSlice({
                     product.favorite = product.favorite.filter(user => user !== action.payload.login)
                 }
             })
+        },
+        setRating: (state, action) => {
+            state.forEach(product => {
+                if (product.id === action.payload.productId) {
+                    product.starsRating = { ...product.starsRating, [action.payload.user]: action.payload.grade };
+                }
+            })
         }
     }
 })
-export const { setFavorite } = productsSlice.actions
+export const { setFavorite, setRating } = productsSlice.actions
 
 export const selectProducts = (state) => state.products;
 
 export default productsSlice.reducer;
+
